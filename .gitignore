@@ -1,30 +1,67 @@
-
-.DS_Store
-.AppleDouble
-.LSOverride
-._*
-
-
-xcuserdata/
-*.xcuserstate
-project.xcworkspace/
-*.xccheckout
-
-
+# ===================== 核心 - Xcode 生成文件 =====================
+# Xcode 构建目录（编译产物、中间文件）
 build/
+# Xcode 派生数据（索引、缓存等，体积大且无需提交）
 DerivedData/
-*.hmap
-.build/
+# Xcode 用户配置（每个人的编辑器设置、断点等，避免冲突）
+*.xcuserdata/
+# Xcode 工作区状态文件（本地工作区配置）
+xcshareddata/WorkspaceSettings.xcsettings
+# Xcode 方案的本地配置（个人调试方案）
+xcuserdata/
+# 项目包依赖缓存（若用 Swift Package Manager）
+.swiftpm/xcode/package.xcworkspace/xcuserdata/
 
+# ===================== macOS 系统文件 =====================
+# macOS 隐藏的文件夹属性文件
+.DS_Store
+# macOS 桌面服务缓存
+.AppleDouble
+# macOS 资源分支文件
+.LSOverride
+# macOS 垃圾桶文件
+.Trashes
+# macOS 临时文件
+tmp/
+temp/
 
-*.xcarchive
+# ===================== 编译/运行产物 =====================
+# macOS 应用包（编译后的 .app，无需提交）
+*.app
+# 调试符号文件（dSYM，仅本地调试/归档用）
+*.dSYM/
+# 归档文件（ipa/pkg 等分发产物）
 *.ipa
-*.dmg
-*.dSYM.zip
-*.dSYM
+*.pkg
+# 日志文件
+*.log
 
+# ===================== 敏感/配置文件 =====================
+# 环境变量文件（存储 API Key、密钥等敏感信息，需本地创建）
+.env
+.env.local
+.env.*.local
+# API Key 配置文件（若你把 API Key 单独抽成 plist/json，需忽略）
+Config/APISecret.plist
+Config/APISecret.json
+# 本地配置文件（自定义的本地调试配置）
+LocalConfig.swift
 
-.swiftpm/
+# ===================== 第三方依赖（按需启用） =====================
+# Pods/
+# Podfile.lock
+# 
+# Carthage/Build/
+# 
+# *.xcworkspace/contents.xcworkspacedata
 
-
-Pods/
+# ===================== 其他通用忽略项 =====================
+# 编辑器临时文件（VS Code/Sublime 等）
+*.swp
+*.swo
+.idea/
+.vscode/
+# 全局忽略的临时文件
+*.bak
+*.tmp
+*.backup
